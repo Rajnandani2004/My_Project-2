@@ -1,0 +1,90 @@
+body
+{
+    float:right;
+    text-transform: capitalize;
+    font-family: "Sofia", sans-serif;
+    
+}
+p.thick {
+font-weight: bold;
+}
+ul.a {
+  list-style-type: circle;
+}
+
+h1{
+    
+    color: rgb(74, 9, 114);
+    text-shadow: 2px 2px 5px red;
+}
+h2{
+    
+    color: rgb(74, 9, 114);
+    text-shadow: 2px 2px 5px blue;
+}
+div {
+    background-color: pink;
+    opacity: 0.9;
+    border-left: 10px solid red;
+    padding: 10px;
+    margin-bottom: 20px; /* Add margin between the div elements */
+    margin-left:13.5%
+}
+
+div div {
+    border-left: none;
+  }
+p{
+    
+    word-wrap: break-word;
+    background-color: pink;
+    opacity: 0.9;
+    border: 10 px solid red;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid;
+  }
+  .sidenav {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 40px;
+    padding-right: 10px; /* Add padding to create space for the sidebar */
+  }
+.w3-sidebar {
+    height: 100%; /* Set the height to fill the entire sidebar */
+    width: 160px; /* Set the width of the sidebar */
+    background-color: #f1f1f1; /* Set the background color */
+    position: fixed; /* Make the sidebar fixed position */
+    overflow: auto; /* Enable scrolling if the content overflows */
+  }
+  
+  .w3-sidebar a {
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Display links as block elements */
+  }
+  
+  .w3-sidebar a:hover {
+    background-color: #e75c5c; /* Add a hover effect to the links */
+  }
+  
+  .w3-sidebar a.active {
+    background-color: #4CAF50; /* Highlight the active link */
+    color: white; /* Set the text color of the active link */
+  }
+  aa:link, aa:visited {
+    background-color: #f3281a;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }

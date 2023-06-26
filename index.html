@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<head>
+    
+    <title>my_portfolio</title>
+    <script>
+      function openClub(evt, clubName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("Club");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+        }
+        document.getElementById(clubName).style.display = "block";
+        evt.currentTarget.className += " w3-red";
+      }
+      </script>
+
+ <link rel="stylesheet" href="index.css">
+</head>
+
+
+
+
+    
+<body>
+
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+   
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
+      
+      <p>HOME</p>
+    </a>
+   
+    <a href="#Acedamics" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+     
+      <p>Acedamics</p>
+    </a>
+    <a href="#sandh" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      
+      <p>Skills and Hobbies</p>
+    </a>
+
+    <a href="#project" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      
+      <p>project</p>
+    </a>
+
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+  </nav>
+
+
+<div>   
+<header class ="w3-container w3-padding-32 w3-center w3-black" id="home">
+  <h1 class="w3-jumbo">About me</h1>
+  <p class="thick"> 
+    <ul class="a">
+    <h3><li>Greetings readers! I am Rajnandani, a student pursuing my B.Tech in the MnC branch
+     at DA-IICT.</li>
+     <li> I live in Junagadh - Gujarat. I completed my highschool education from Shri N. P. Bhalodia highschool 
+  junagadh.</li>
+  <li>It has been two years at DAIICT. In this whole period of time, I have learned so many new things.
+   The institute provided me with a vast area for learning.</li>
+   <li>
+In these two years, I have learned competitive programming and various mathematical subjects.</li>
+ </h3>
+
+</p>
+</ul>
+</header>    
+</div>
+
+
+
+
+  <div>   
+    <header class ="w3-container w3-padding-32 w3-center w3-black" id="Acedamics">
+    <h1 class="w3-jumbo">Acedamics</h1>  
+    <p class="thick" > <h3>Let me share my acedamic achievements...</h3>
+      <div class="w3-bar w3-green">
+        <button class="w3-bar-item w3-button tablink w3-red" onclick="openClub(event,'Semester - 1')">Semester - 1</button>
+        <button class="w3-bar-item w3-button tablink w3-red" onclick="openClub(event,'Semester - 2')">Semester - 2</button>
+        <button class="w3-bar-item w3-button tablink w3-red" onclick="openClub(event,'Semester - 3')">Semester - 3</button>
+        <button class="w3-bar-item w3-button tablink w3-red" onclick="openClub(event,'Semester - 4')">Semester - 4</button>
+        
+       
+    </div>
+    <div id="Semester - 1" class="w3-container w3-border Club ">
+        <h2>Semester - 1</h2>
+        <table>
+          <tr>
+            <th>Course Name</th>
+            <th>Grades</th>
+          </tr>
+          <tr>
+            <td>Computer Organization and Programming</td>
+            <td>AA</td>
+          </tr>
+          <tr>
+            <td>Digital Logic Design</td>
+            <td>AB</td>
+          </tr>
+          <tr>
+            <td>Mathematical, Algorithmic, and Computational Thinking</td>
+            <td>BB</td>
+          </tr>
+          <tr>
+            <td>Language and Literature</td>
+            <td>BC</td>
+          </tr>
+          <tr>
+            <td>Discrete Mathematics</td>
+            <td>CD</td>
+          </tr>
+        </table>
+       
+      </div>
+
+
+      <div id="Semester - 2" class="w3-container w3-border Club"style="display:none">
+        <h2>Semester - 2</h2>
+        <table>
+          <tr>
+            <th>Course Name</th>
+            <th>Grades</th>
+          </tr>
+          <tr>
+            <td>Functions of Single Variable and ODEs</td>
+            <td>BB</td>
+          </tr>
+          <tr>
+            <td>Data Structures and Algorithms</td>
+            <td> BB</td>
+          </tr>
+          <tr>
+            <td>Object Oriented Programming</td>
+            <td>BB</td>
+          </tr>
+          <tr>
+            <td>Linear Algebra</td>
+            <td>BC</td>
+          </tr>
+          <tr>
+            <td>Approaches to Indian Society</td>
+            <td>CC</td>
+          </tr>
+        </table>
+        </div>
+
+
+
+      <div id="Semester - 3" class="w3-container w3-border Club"style="display:none">
+        <h2>Semester - 3</h2>
+        <table>
+          <tr>
+            <th>Course Name</th>
+            <th>Grades</th>
+          </tr>
+          <tr>
+            <td>Database Management Systems</td>
+            <td>AB</td>
+          </tr>
+          <tr>
+            <td>Design and Analysis of Algorithms</td>
+            <td> AB</td>
+          </tr>
+          <tr>
+            <td>Science, Technology, Society</td>
+            <td>BC</td>
+          </tr>
+          <tr>
+            <td>Functions of Several Variables and PDEs</td>
+            <td>CC</td>
+          </tr>
+          <tr>
+            <td>Operating Systems</td>
+            <td>CC</td>
+          </tr>
+          <tr>
+            <td>Probability and Random Processes</td>
+            <td>CC</td>
+          </tr>
+        </table>
+       
+      </div>
+
+
+
+
+
+      
+      <div id="Semester - 4" class="w3-container w3-border Club"style="display:none">
+        <h2>Semester - 4</h2>
+        <table>
+          <tr>
+            <th>Course Name</th>
+            <th>Grades</th>
+          </tr>
+          <tr>
+            <td>Parallel and Distributed Algorithms</td>
+            <td>AB</td>
+          </tr>
+          <tr>
+            <td>Environmental Studies</td>
+            <td> BB</td>
+          </tr>
+          <tr>
+            <td>Theory of Computation</td>
+            <td>BC</td>
+          </tr>
+          <tr>
+            <td>Real and Complex Analysis</td>
+            <td>CC</td>
+          </tr>
+          <tr>
+            <td>Numerical and Computational Methods</td>
+            <td>CC</td>
+          </tr>
+          <tr>
+            <td>Mathematical Statistics</td>
+            <td>CD</td>
+          </tr>
+        </table>
+        
+      </div>
+    </p>
+    </header>    
+    </div>
+
+
+
+    <div>   
+      <header class ="w3-container w3-padding-32 w3-center w3-black" id="sandh">
+      <h1 class="w3-jumbo">My skills and Hobbies</h1>  
+      <p class="thick" > <h3>
+        <ul class="a">
+        <li>I have been practising competitive programming since the start of my second year.
+        I prefer the C++ coding language.
+         I am good at applying greed, implementation,
+        math, DSA methods. </li>
+        <li>I have also learned very basic things about Python in my 4th semester.
+        As OOP, DBMS, and OS were my core courses, I also have some basic knowledge of those subjects.</li>
+        <li>
+        As a co-curricular activity, I attended sessions held by the MSTC club. In which I learned
+        few techniques of web development. I created this web site on my own with the knowledge I gained from
+        interacting with seniors and online browsers.</li>
+        </ul>
+      </h3>
+      </p>
+      <p class="thick" > <h3>
+        <ul class="a">
+        <li>Painting is my biggest hobby. I also join training in my priamary school days.</li>
+        <li>
+        Apart from this I also like to play piano. I have god gifted skill for playing it.</li>
+        <li>Nowadays I started cooking so I also developed interest in cooking.</li>
+        <li>
+        I like reading the historical novels and books espacially life stories of mighty kings.</li>
+        </ul>
+      </h3>
+      </p>
+      </header>    
+      </div>
+
+        <div>   
+          <header class ="w3-container w3-padding-32 w3-center w3-black" id="project">
+          <h1 class="w3-jumbo">My Projects
+          </h1>  
+          <ul class="a">
+          <p class="thick" > <h3>
+            <li>
+            In My 2nd semester I have done a group project of railway platform allocation under
+            guidence of Prof. Saurabh Tiwari. Here is a github link take a look!</li>
+            <li>
+            <a href="https://github.com/Rajnandani2004/My_Project-1" target="_blank">This is a link</a>
+            </li>
+            <li>
+            This portfolio is my individual activity project insplired by MSTC club.</li>
+          </h3>
+          </p>
+          </ul>
+          </header>    
+          </div>
+
+
+
+          <div>   
+            <header id="contact">
+            <h1 class="w3-jumbo">Contact me
+              <div class="w3-section">
+                
+                <p> Phone: +91 7567760175</p>
+                <p> Email: rajnandania2004@gmail.com</p>
+              </div>
+            </header>    
+            </div>
+  
+</body>
+</html>
